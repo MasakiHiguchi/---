@@ -6,8 +6,8 @@ class Table:
         self.age = age
         self.total_amount = total_amount
 
-        def ReleaceBashingStatus(self):
-            self.bashing_status = 0
+    def ReleaceBashingStatus(self):
+        self.bashing_status = 0
 
 Table_list = []
 Table_name = 1
