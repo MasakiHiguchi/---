@@ -9,8 +9,15 @@ class Table:
     def ReleaceBashingStatus(self):
         self.bashing_status = 0
 
-Table_list = []
-Table_name = 1
-for i in range(4):
-    Table_list.append(Table_name)
+    def Table_list(self):
+        list1=[self.table_name, self.bashing_status, self.number_of_people, self.total_amount]
+        list2=[]
+
+
+table_list = [[]]
+tables = 4
+for i in range(tables):
+    table_list.append(Table_name)
     Table_name = Table_name + 1
+
+print(table_list)
