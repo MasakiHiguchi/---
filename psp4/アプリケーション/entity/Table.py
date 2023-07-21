@@ -11,7 +11,6 @@ class Table:
 
     def Table_list(self):
         list1=[self.table_name, self.bashing_status, self.number_of_people, self.total_amount]
-        list2=[]
 
 
 table_list = [[]]
