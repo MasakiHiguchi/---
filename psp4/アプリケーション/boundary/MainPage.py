@@ -1,4 +1,5 @@
 import tkinter as tk
+import subprocess
 
 class MainPage(tk.Tk):
     def __init__(self):
@@ -16,13 +17,13 @@ class MainPage(tk.Tk):
         frame_top.pack(side=tk.TOP, fill=tk.X)
 
         # T1からT3までのボタンを横に並べる
-        btn_t1 = tk.Button(frame_top, text="T1", command=self.open_order_page_t1, width=15, height=7)
+        btn_t1 = tk.Button(frame_top, text="T1", command=self.open_order_page_t1, width=15, height=8)
         btn_t1.pack(side=tk.LEFT, fill=tk.X, padx=10, pady=10)
 
-        btn_t2 = tk.Button(frame_top, text="T2", command=self.open_order_page_t2, width=15, height=7)
+        btn_t2 = tk.Button(frame_top, text="T2", command=self.open_order_page_t2, width=15, height=8)
         btn_t2.pack(side=tk.LEFT, fill=tk.X, padx=10, pady=10)
 
-        btn_t3 = tk.Button(frame_top, text="T3", command=self.open_order_page_t3, width=15, height=7)
+        btn_t3 = tk.Button(frame_top, text="T3", command=self.open_order_page_t3, width=15, height=8)
         btn_t3.pack(side=tk.LEFT, fill=tk.X, padx=10, pady=10)
 
         # 下半分のフレーム
@@ -39,24 +40,24 @@ class MainPage(tk.Tk):
 
     # 各ボタンのコマンド
     def open_order_page_t1(self):
-        # T1のOrderPageに移動する処理を記述
-        print("Moving to OrderPage for T1")
+        # T1のOrderPage.pyを実行する
+        subprocess.run(["python", "OrderPage.py", "T1"])
 
     def open_order_page_t2(self):
-        # T2のOrderPageに移動する処理を記述
-        print("Moving to OrderPage for T2")
+        # T2のOrderPage.pyを実行する
+        subprocess.run(["python", "OrderPage.py", "T2"])
 
     def open_order_page_t3(self):
-        # T3のOrderPageに移動する処理を記述
-        print("Moving to OrderPage for T3")
+        # T3のOrderPage.pyを実行する
+        subprocess.run(["python", "OrderPage.py", "T3"])
 
     def open_inventory_page(self):
-        # InventoryPageに移動する処理を記述
-        print("Moving to InventoryPage")
+        # 左下のボタンが押されたときの処理
+        subprocess.run(["python", "InventoryPage.py"])
 
     def open_manage_order_product_page(self):
-        # ManageOrderProductPageに移動する処理を記述
-        print("Moving to ManageOrderProductPage")
+        # 右下のボタンが押されたときの処理
+        subprocess.run(["python", "ManageOrderProductPage.py"])
 
 if __name__ == "__main__":
     app = MainPage()
