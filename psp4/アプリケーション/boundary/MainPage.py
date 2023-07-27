@@ -17,13 +17,13 @@ class MainPage(tk.Tk):
         frame_top.pack(side=tk.TOP, fill=tk.X)
 
         # T1からT3までのボタンを横に並べる
-        btn_t1 = tk.Button(frame_top, text="T1", command=self.open_order_page_t1, width=15, height=8)
+        btn_t1 = tk.Button(frame_top, text="T1", command=self.open_order_page_t1, width=15, height=10)
         btn_t1.pack(side=tk.LEFT, fill=tk.X, padx=10, pady=10)
 
-        btn_t2 = tk.Button(frame_top, text="T2", command=self.open_order_page_t2, width=15, height=8)
+        btn_t2 = tk.Button(frame_top, text="T2", command=self.open_order_page_t2, width=15, height=10)
         btn_t2.pack(side=tk.LEFT, fill=tk.X, padx=10, pady=10)
 
-        btn_t3 = tk.Button(frame_top, text="T3", command=self.open_order_page_t3, width=15, height=8)
+        btn_t3 = tk.Button(frame_top, text="T3", command=self.open_order_page_t3, width=15, height=10)
         btn_t3.pack(side=tk.LEFT, fill=tk.X, padx=10, pady=10)
 
         # 下半分のフレーム

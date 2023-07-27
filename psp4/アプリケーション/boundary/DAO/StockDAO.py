@@ -2,7 +2,6 @@
 
 # Inventory.pyからInventoryクラスをインポート
 from entity.Inventory import Inventory
-from Inventory import Inventory
 
 class StockDAO:
     def __init__(self):
